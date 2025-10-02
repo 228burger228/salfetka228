@@ -69,6 +69,8 @@ const AdminPanel = () => {
     return colors[priority as keyof typeof colors] || colors.medium;
   };
 
+
+  //отсюда
   const renderColumn = (status: BugReport['status'], title: string) => {
     const columnReports = reports.filter(r => r.status === status);
     
@@ -96,7 +98,7 @@ const AdminPanel = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="p-4 pt-2">
-                <p className="text-sm text-muted-foreground line-clamp-2 mb-3 overflow-hidden text-ellipsis break-words">
+                <<p className="text-sm text-muted-foreground mb-3 overflow-hidden line-clamp-2 break-words">
   {report.description}
 </p>
                   
@@ -189,6 +191,9 @@ const AdminPanel = () => {
     );
   };
 
+
+
+            
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto p-6">
